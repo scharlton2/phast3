@@ -20,7 +20,10 @@ jobs:
         sudo apt install -y libboost-dev libhdf5-dev
 
     - name: test dependencies
-      run: locate hdf5.h
+      if: ${{ true }}
+      run: >
+        sudo apt install -y mlocate &&
+        locate hdf5.h
 
     - name: bootstrap
       run: ./bootstrap
@@ -29,9 +32,15 @@ jobs:
       run: >
         mkdir _build &&
         cd _build &&
-        ../configure
+        ../configure --with-hdf5=/usr/lib/x86_64-linux-gnu/hdf5/serial
 
     - name: make
       run: >
         cd _build &&
         make -j2
+
+    - name: make check
+      run: >
+        cd _build &&
+        make -j2 check
+  
