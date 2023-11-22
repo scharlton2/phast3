@@ -360,6 +360,7 @@ AC_CONFIG_FILES([
   src/Makefile
   src/phast/Makefile
   src/phast/phast
+  src/phast/PhreeqcRM/irm_dll_export.h
   src/phasthdf/Makefile
   src/phasthdf/build.xml
   src/phastinput/Makefile
