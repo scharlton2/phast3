@@ -319,6 +319,11 @@ PHAST_SRC=\
 	PhreeqcRM/src/IPhreeqcPhast/IPhreeqcPhastLib.cpp\
 	PhreeqcRM/src/IPhreeqcPhast/IPhreeqcPhastLib.h\
 	PhreeqcRM/src/IrmResult.h\
+	PhreeqcRM/src/BMI_interface_F.cpp\
+	PhreeqcRM/src/BMI_interface_F.h\
+	PhreeqcRM/src/bmi.hxx\
+	PhreeqcRM/src/BMIPhreeqcRM.cpp\
+	PhreeqcRM/src/BMIPhreeqcRM.h\
 	PhreeqcRM/src/BMIVariant.cpp\
 	PhreeqcRM/src/BMIVariant.h\
 	PhreeqcRM/src/PhreeqcRM.cpp\
@@ -328,6 +333,13 @@ PHAST_SRC=\
 	PhreeqcRM/src/RM_interface_C.h\
 	PhreeqcRM/src/RM_interface_F.cpp\
 	PhreeqcRM/src/RM_interface_F.h\
+	PhreeqcRM/src/RMVARS.h\
+	PhreeqcRM/src/VarManager.cpp\
+	PhreeqcRM/src/VarManager.h\
+	PhreeqcRM/src/YAML_interface_F.cpp\
+	PhreeqcRM/src/YAML_interface_F.h\
+	PhreeqcRM/src/YAMLPhreeqcRM.cpp\
+	PhreeqcRM/src/YAMLPhreeqcRM.h\
 	TM_interface.cpp\
 	TM_interface.h
 
