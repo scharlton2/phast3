@@ -20,7 +20,7 @@ jobs:
         sudo apt install -y libboost-dev libhdf5-dev
 
     - name: test dependencies
-      if: ${{ true }}
+      if: ${{ false }}
       run: >
         sudo apt install -y mlocate &&
         locate hdf5.h
@@ -43,4 +43,9 @@ jobs:
       run: >
         cd _build &&
         make -j2 check
+  
+    - name: make distcheck
+      run: >
+        cd _build &&
+        DISTCHECK_CONFIGURE_FLAGS="--with-hdf5=/usr/lib/x86_64-linux-gnu/hdf5/serial" make -j 8 distcheck
   

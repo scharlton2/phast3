@@ -1,5 +1,6 @@
 ACLOCAL_AMFLAGS = -I m4
 EXTRA_DIST = CMakeLists.txt
-SUBDIRS = phast phasthdf phastinput
+# SUBDIRS = phast phasthdf phastinput
+SUBDIRS = phast phastinput
 
 
