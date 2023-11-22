@@ -14,10 +14,13 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
-    - name: install boost
+    - name: install dependencies
       run: >
         sudo apt -y update &&
-        sudo apt install -y libboost-dev
+        sudo apt install -y libboost-dev libhdf5-dev
+
+    - name: test dependencies
+      run: locate hdf5.h
 
     - name: bootstrap
       run: ./bootstrap
